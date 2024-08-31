@@ -1,0 +1,162 @@
+:root{
+ --Red: rgba(199, 58, 15,1);
+ --Green: hsl(159, 69%, 38%);
+ --Rose-50: #fcf9f7;
+ --Rose-100: #f4edeb;
+ --Rose-300: hsl(14, 25%, 72%);
+ --Rose-400: hsl(7, 20%, 60%);
+ --Rose-500: hsl(12, 20%, 44%);
+ --Rose-900: hsl(14, 65%, 9%);
+
+}
+.w-90{
+    width:90% !important;
+}
+
+body{
+    background-color: var(--Rose-100);
+}
+
+.card{
+    background-color: transparent;
+}
+
+.card_header{
+    color: var(--Red);
+}
+
+.overContent{
+  color:rgba(255, 255, 255, 0.918);
+ background-color:var(--Red) !important ;
+ overflow: hidden;
+ transition: all 1s;
+ width: 70%;
+ height: 40px;
+ 
+}
+
+.add_toCart{
+    opacity: 0;
+    right: 100%;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 1s;
+}
+
+.overContent:hover :is(.cart-logo){
+    opacity: 0;
+    left: 100%;
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 1s;
+}
+
+.overContent:hover :is(.add_toCart){
+
+    opacity: 1;
+    right: 0;
+    color:var(--Red);
+    background-color: rgba(255, 255, 255, .9);
+    cursor: pointer;
+}
+
+.price{
+    color: var(--Red);
+}
+
+.stock_number{
+    color: var(--Red);
+}
+.stock_cost{
+    color: var(--Rose-300);
+}
+
+.total_cost{
+    color: var(--Rose-500);
+}
+.close{
+    color:rgba(201, 174, 166,.7);
+
+    transition: color 1s ease;
+
+}
+
+
+.close:hover{
+    cursor: pointer;
+    color:rgba(214, 153, 135,1);
+}
+
+.col{
+    position: relative;
+}
+
+#cartItems>.col::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    border: none;
+    height: 1px;
+    background-color:#c3bfbf3d;
+    left:2.5% ;
+    
+
+
+
+}
+
+
+/* ? cart Footer  */
+
+.delivery{
+    background-color: var(--Rose-100) !important;
+}
+.delivery:hover{
+background-color:var(--Rose-100) !important;
+}
+
+#ConfirmButton,.confirmBtn{
+    
+    background-color: var(--Red);
+    color: #fff;
+}
+
+
+
+/* ? confirm order modal */
+#ConfirmedCart{
+    background-color: rgba(0, 0, 0, 0.432);
+}
+#ConfirmOrder{
+    width:30rem;
+}
+
+#confirmedList{
+    background-color: var(--Rose-100);
+}
+
+#confirmedList .cartItemList::after{
+    content: '';
+    position: absolute;
+    width: 95%;
+    border: none;
+    height: 1px;
+    background-color:#c3bfbf3d;
+    left:2.5% ;
+    
+
+
+
+}
+.confirmBtn{
+    width: 100%;
+}
+
+.confirmBtn:hover{
+    background-color: rgba(199, 58, 15, 0.705) !important;
+}
+
+
+#exit:hover{
+    cursor: pointer;
+}
