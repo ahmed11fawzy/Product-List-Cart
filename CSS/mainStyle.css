@@ -42,7 +42,9 @@ body{
     background-color: rgba(255, 255, 255, 0);
     transition: all 1s;
 }
-
+.cart-logo{
+    font-size: .90rem;
+}
 .overContent:hover :is(.cart-logo){
     opacity: 0;
     left: 100%;

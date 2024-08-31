@@ -103,12 +103,12 @@ let addToCart;
 
 dessertArr.forEach(element => {
     
-  document.getElementById("item_list").innerHTML +=  `<div class="col">
+  document.getElementById("item_list").innerHTML +=  `<div class=" col-md-6 col-lg-4 col-sm-6 ">
       <div class="card border border-0 ">
         <div class="position-relative">
           <img src="${element.image.desktop}" class="card-img-top  " alt="...">
           <div class="overContent position-absolute top-100 start-50 translate-middle bg-info rounded rounded-pill w-75 text-center d-flex justify-content-center align-items-center  " >
-              <div class="cart-logo" ><i class="fa-solid fa-cart-plus"></i> Add To cart </div>
+              <div class="cart-logo  " ><i class="fa-solid fa-cart-plus"></i> Add To cart </div>
               <div class="add_toCart position-absolute top-0 w-100 text-center rounded rounded-pill  h-100 d-flex align-items-center justify-content-center " >
               <i  class="fa-regular fa-plus col-5 addToCart  "></i>
               <i  class="fa-solid fa-circle-minus col-5 removeFromCart  "></i>
